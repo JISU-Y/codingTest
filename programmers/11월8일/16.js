@@ -17,6 +17,7 @@ function solution(s) {
     yPos = lowerStr.indexOf("y", i)
     i = yPos + 1
   }
+  console.log(s.toUpperCase().split("P"))
   return pCount === yCount ? true : false
 
   // 모르는 부분

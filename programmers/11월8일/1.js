@@ -18,10 +18,10 @@ process.stdin.on("data", (data) => {
   console.log(stars)
 
   // 이렇게 하는 방법도 있다더라
-  //   const row = '*'.repeat(a)
-  //   for(let i =0; i < b; i++){
-  //       console.log(row)
-  //   }
+  // const row = '*'.repeat(a)
+  // for(let i =0; i < b; i++){
+  //     console.log(row)
+  // }
 
   //   for(let i =0; i < b; i++){
   //    console.log(Array(a).fill("*").join(""))
