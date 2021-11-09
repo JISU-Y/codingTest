@@ -6,12 +6,6 @@ function solution(n) {
     sum += parseInt(arr[i])
   }
 
-  //   const sum = arr.reduce((acc, cur) => {
-  //     acc += cur
-  //     return acc
-  //   })
-  //   console.log(sum)
-
   return sum
 
   // 더 쉬운 방법

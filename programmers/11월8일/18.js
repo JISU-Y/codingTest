@@ -1,6 +1,7 @@
 // 서울에서 김서방 찾기
 function solution(seoul) {
   // idx = seoul.indexOf('Kim') // 대문자로 안적어놓고..
+  // findIndex(name => name==='Kim')
   let husband = 0
   seoul.forEach((el, idx) => {
     if (el === "Kim") husband = idx

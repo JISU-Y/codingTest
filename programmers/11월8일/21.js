@@ -18,6 +18,7 @@ function solution(s) {
     })
     .join(" ")
   // 다시 띄어쓰기로 합침
+  // 그냥 합치면 되는건가.? 원래 띄어쓰기 상관없이?
 }
 
 let s = " try  hello   world"

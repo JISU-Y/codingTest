@@ -1,26 +1,13 @@
 // 최소 직사각형
 function solution(sizes) {
   let arr = sizes.map((size) => {
-    return size.sort(function (a, b) {
-      return b - a
-    })
-  })
+    return size.sort((a, b) => b - a)
+  }) // 사이즈 일괄 적용 (가로가 더 크게)
 
-  let w = arr
-    .map((el) => {
-      return el[0]
-    })
-    .sort(function (a, b) {
-      return a - b
-    })[sizes.length - 1]
-  let h = arr
-    .map((el) => {
-      return el[1]
-    })
-    .sort(function (a, b) {
-      return a - b
-    })[sizes.length - 1]
+  let w = arr.map((el) => el[0]).sort((a, b) => b - a)[0] // 다시 첫번째 요소만 찾아서 sorting후 제일 큰거
+  let h = arr.map((el) => el[1]).sort((a, b) => b - a)[0]
 
+  // ..ㅠㅠ
   return w * h
 }
 
@@ -33,7 +20,7 @@ let sizes = [
 
 solution(sizes)
 
-// Math.max를 이용,,, 무슨 말이지
+// Math.max를 이용,,, ??
 function solution(sizes) {
   const [hor, ver] = sizes.reduce(([h, v], [a, b]) => [Math.max(h, Math.max(a, b)), Math.max(v, Math.min(a, b))], [0, 0])
   return hor * ver

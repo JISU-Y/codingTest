@@ -12,7 +12,7 @@ function solution(s) {
   }
 }
 
-let s = "11e111"
+let s = "11e111" // 11x10^111 / 1e11 / pi
 
 console.log(solution(s))
 
