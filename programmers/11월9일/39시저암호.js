@@ -17,7 +17,6 @@ function solution(s, n) {
 // solution("AB", 1) // "BC"
 solution("a B z", 4) // "e F d"
 
-// 안됨..
 // function solution(s, n) {
 // console.log(
 //   s
