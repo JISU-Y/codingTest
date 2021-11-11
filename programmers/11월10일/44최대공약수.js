@@ -19,3 +19,6 @@ console.log(solution(3, 12))
 solution(2, 5)
 
 //     System.out.println(num1 * num2 / gcd);
+
+// (n%i) && (m%j)
+// (j/n) (n/m)
