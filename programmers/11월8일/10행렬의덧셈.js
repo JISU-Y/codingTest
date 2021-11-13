@@ -11,7 +11,8 @@ function solution(arr1, arr2) {
 
   return answer
 
-  // return A.map((a,i) => a.map((b, j) => b + B[i][j]));
+  // return arr1.map((a_el,idx) => a_el.map((in_a_el, jdx) => in_a_el + arr2[idx][jdx]));
+  // in_a_el이 곧 arr1[idx][jdx]
 }
 
 let arr1 = [[1], [2]]

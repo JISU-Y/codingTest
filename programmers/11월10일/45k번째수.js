@@ -1,9 +1,9 @@
 // K번째 수
 function solution(array, commands) {
   let answer = []
-  for (let i = 0; i < 3; i++) {
-    answer.push(array.slice(commands[i][0] - 1, commands[i][1]).sort()[commands[i][2] - 1])
-  }
+  for (let i = 0; i < commands.length; i++) {
+    answer.push(array.slice(commands[i][0] - 1, commands[i][1]).sort((a, b) => a - b)[commands[i][2] - 1])
+  } // sort() 그냥 이것만 쓰면 안된다!!!
   return answer
 }
 
